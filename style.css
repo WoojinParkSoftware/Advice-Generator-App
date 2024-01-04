@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(216, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(219, 19%, 24%);
+    --Light-Gray: hsl(217, 19%, 35%); /* Assuming this is the background color of the container */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Dark-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray); 
+    border-radius: 15px;
+    padding: 20px; 
+    width: auto; 
+    max-width: 600px;
+    margin: 0; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); 
+}
+
+p{
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    word-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.25rem;
+}
+
+.advice-text {
+    color: var(--Light-Cyan);
+    margin: 20px 0;
+    font-size: 28px; 
+    line-height: 1.4; 
+    padding: 0 20px; 
+}
+
+.pattern-divider {
+    width: 80%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the divider */
+}
+
+button {
+    margin: 0 auto -50px;
+    display: flex;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Neon-Green);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+button:focus .dice-icon,
+button:hover .dice-icon {
+    box-shadow: 0px 0px 10px var(--Neon-Green); /* Optional: Adding hover effect */
+}
